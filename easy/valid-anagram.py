@@ -16,6 +16,7 @@
 #
 # s and t consist of lowercase English letters.
 
+# Solution 1
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
@@ -31,11 +32,9 @@ class Solution:
                 return False
         return True
 
-
 # Solution 2
 
 class Solution2:
     def isAnagram(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)
-
 
